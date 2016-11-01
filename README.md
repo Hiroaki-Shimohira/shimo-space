@@ -6,9 +6,9 @@
 *email 
 *password 
 ##associate
-*has_many :massages 
-*has_many :group_user 
-*has_many :groups, through: :group_user 
+* has_many :massages 
+* has_many :group_user 
+* has_many :groups, through: :group_user 
 
 #Group
 ##column
