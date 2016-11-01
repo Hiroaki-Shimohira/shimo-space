@@ -2,9 +2,9 @@
 
 #user
 ##column
-*nickname 
-*email 
-*password 
+* nickname 
+* email 
+* password 
 ##associate
 * has_many :massages 
 * has_many :group_user 
@@ -12,7 +12,7 @@
 
 #Group
 ##column
-*name 
+* name 
 ##associate
 * has_many :massages 
 * has_many :group_user 
