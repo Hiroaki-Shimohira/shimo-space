@@ -1,28 +1,37 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#user
+##column
+*nickname
+*email
+*password
+##associate
+*has_many :massages
+*has_many :group_user
+*has_many :groups, through: :group_user
 
-Things you may want to cover:
+#Group
+##column
+*name
+##associate
+*has_many :massages
+*has_many :group_user
+*has_many :users ,through: :group_user
 
-* Ruby version
+#GroupUser
+##column
+*user_id
+*group_id
+##associate
+*belongs_to :user
+*belongs_to :group
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+#message
+##column
+*body
+*image
+*user_id
+*group_id
+#associate
+*belongs_to :user
+*belongs_to :group
