@@ -5,6 +5,7 @@
 * nickname 
 * email 
 * password 
+
 ## associate
 * has_many :massages 
 * has_many :group_user 
@@ -13,6 +14,7 @@
 #Group
 ##column
 * name 
+
 ## associate
 * has_many :massages 
 * has_many :group_user 
@@ -22,6 +24,7 @@
 ##column
 * user_id 
 * group_id 
+
 ## associate
 * belongs_to :user 
 * belongs_to :group 
@@ -32,6 +35,7 @@
 * image 
 * user_id 
 * group_id 
-## associate
+
+##associate
 * belongs_to :user 
 * belongs_to :group 
