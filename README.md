@@ -31,7 +31,7 @@
 * body 
 * image 
 * user_id 
-* group_id 
+* group_id  
 #associate
 * belongs_to :user 
 * belongs_to :group 
